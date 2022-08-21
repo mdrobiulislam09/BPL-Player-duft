@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
-<body class="m-5">
+<body class="m-5 bg-secondary">
     <header class="bg-primary p-5 mb-4">
             <h1 class="text-center">Select Your Best Five</h1>
     </header>
@@ -17,7 +17,7 @@
         <section class="row">
                 <div class="col-4">
                     <div class="card text-center" style="width: 18rem;">
-                        <img src="image/Afif-Hossain.jpg.jfif" class="card-img-top" alt="...">
+                        <img src="image/afif.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 id="afif-hossain" class="card-title">Affif Hossain</h5>
                             <button id="afif" class="btn btn-primary mt-3 px-5">Select</button>
@@ -28,17 +28,17 @@
                     <div class="card text-center" style="width: 18rem;">
                         <img src="image/liton.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Affif Hossain</h5>
-                            <button class="btn btn-primary mt-3 px-5">Select</button>
+                            <h5 id="liton-das" class="card-title">Liton Das</h5>
+                            <button id="liton" class="btn btn-primary mt-3 px-5">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card text-center" style="width: 18rem;">
+                    <div class="card text-center bg-light" style="width: 18rem;">
                         <img src="image/mustafizur.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Affif Hossain</h5>
-                            <button class="btn btn-primary mt-3 px-5">Select</button>
+                            <h5 id="mustafizzur-rahaman" class="card-title">Mustafizzur Rahaman</h5>
+                            <button id="fizz" class="btn btn-primary mt-3 px-5">Select</button>
                         </div>
                     </div>
                 </div>
@@ -46,8 +46,8 @@
                     <div class="card text-center" style="width: 18rem;">
                         <img src="image/riad.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Affif Hossain</h5>
-                            <button class="btn btn-primary mt-3 px-5">Select</button>
+                            <h5 id="mahmudullah-riad" class="card-title">Mahmudullah Riad</h5>
+                            <button id="riad" class="btn btn-primary mt-3 px-5">Select</button>
                         </div>
                     </div>
                 </div>
@@ -55,17 +55,17 @@
                     <div class="card text-center" style="width: 18rem;">
                         <img src="image/sakib.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Affif Hossain</h5>
-                            <button class="btn btn-primary mt-3 px-5">Select</button>
+                            <h5 id="sakib-al-hasan" class="card-title">Sakib Al Hasan </h5>
+                            <button id="sakib" class="btn btn-primary mt-3 px-5">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card text-center" style="width: 18rem;">
-                        <img src="image/liton.jfif" class="card-img-top" alt="...">
+                        <img src="image/saif.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Affif Hossain</h5>
-                            <button class="btn btn-primary mt-3 px-5">Select</button>
+                            <h5 id="saif-uddin" class="card-title">Saif Uddin</h5>
+                            <button id="saif" class="btn btn-primary mt-3 px-5">Select</button>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title text-center">Selected - V</h5>
-                      <ol id="list">
+                      <ol class="listC" id="list">
                       </ol>
                     </div>
                 </div>
@@ -87,24 +87,24 @@
                       <h5 class="card-title text-center">Budget</h5>
                       <div class="d-flex justify-content-around">
                         <p>Per-Player</p>
-                        <input class="w-50" type="tel">
+                        <input id="per-player" class="w-50" type="tel">
                       </div>
                       <div class="text-center">
-                        <button>Calculate</button>
+                        <button id="calculate">Calculate</button>
                       </div>
-                      <p class="text-center">Player Expenses $5000</p>
+                      <p class="text-center">Player Expenses $ <span id="player-cost">00</span></p>
                       <div class="d-flex justify-content-around">
                         <p>Manager</p>
-                        <input class="w-50" type="tel">
+                        <input id="manager" class="w-50" type="tel">
                       </div>
                       <div class="d-flex justify-content-around pl-2">
                         <p>Coach</p>
-                        <input class="w-50" type="tel">
+                        <input id="coach" class="w-50" type="tel">
                       </div>
                       <div class="text-center">
-                        <button>Calculate Total</button>
+                        <button id="calculate-total">Calculate Total</button>
                       </div>
-                      <p class="text-center">Total $11000</p>
+                      <p class="text-center">Total $ <span id="tottalCost">00</span></p>
                     </div>
                 </div>
             </div>
