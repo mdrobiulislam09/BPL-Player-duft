@@ -1,11 +1,17 @@
 function nameValue(nameId, selectID) {
     const name = document.getElementById(nameId) ;
     const list = document.getElementById('list') ;
+
+    const lii = document.querySelectorAll('#list li') ;
+    if (lii.length == 5) {
+        return  ;
+    }
     const li = document.createElement('li') ;
     li.innerText = name.innerText ;
     list.appendChild(li) ;
     const button = document.getElementById(selectID) ;
     button.disabled = true ;
+
 }
 
 
@@ -43,7 +49,8 @@ function Value(cost) {
 document.getElementById('calculate').addEventListener('click', function(){
     const playerValue = Value('per-player') ;
     const playerCost = document.getElementById('player-cost') ;
-    playerCost.innerText = playerValue ;   
+    const lii = document.querySelectorAll('#list li') ;
+    playerCost.innerText = playerValue * lii.length ;   
 })
 document.getElementById('calculate-total').addEventListener('click', function(){
     const playerCost = document.getElementById('player-cost') ;
