@@ -4,7 +4,7 @@ function nameValue(nameId, selectID) {
 
     const lii = document.querySelectorAll('#list li') ;
     if (lii.length == 5) {
-        return  ;
+        return alert('You can add maximum of five players') ;
     }
     const li = document.createElement('li') ;
     li.innerText = name.innerText ;
