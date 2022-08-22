@@ -1,9 +1,8 @@
 function nameValue(nameId, selectID) {
     const name = document.getElementById(nameId) ;
     const list = document.getElementById('list') ;
-
-    const lii = document.querySelectorAll('#list li') ;
-    if (lii.length == 5) {
+    const listName = document.querySelectorAll('#list li') ;
+    if (listName.length == 5) {
         return alert('You can add maximum of five players') ;
     }
     const li = document.createElement('li') ;
@@ -49,8 +48,8 @@ function Value(cost) {
 document.getElementById('calculate').addEventListener('click', function(){
     const playerValue = Value('per-player') ;
     const playerCost = document.getElementById('player-cost') ;
-    const lii = document.querySelectorAll('#list li') ;
-    playerCost.innerText = playerValue * lii.length ;   
+    const listName = document.querySelectorAll('#list li') ;
+    playerCost.innerText = playerValue * listName.length ;   
 })
 document.getElementById('calculate-total').addEventListener('click', function(){
     const playerCost = document.getElementById('player-cost') ;
